@@ -15,6 +15,26 @@
             background-color: #e0f7fa; /* Light blue background */
             color: #333;
         }
+/* Apply the Google Font */
+
+/* Typing animation effect */
+.typing-animation {
+    overflow: hidden; /* Ensures the animation is smooth */
+    white-space: nowrap; /* Prevents text from wrapping */
+    border-right: .15em solid orange; /* Cursor effect */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    font-size: 18px;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
 
         /* Header */
         header {
@@ -339,7 +359,7 @@
 
     <section class="hero" id="home">
         <h1>Welcome to V'KA by Vamshika</h1>
-        <p class="typing-animation">Crocheting hearts with Yarn & Hook</p>
+        <p class="typing-animation">Crocheting magic with every stitch</p>
         <button class="cta-button" onclick="toggleContent()">Learn More</button>
     </section>
 
